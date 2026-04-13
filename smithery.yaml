@@ -1,0 +1,10 @@
+name: translator-pro-ai-mcp
+description: "MEOK AI Labs — translator-pro-ai-mcp — Professional translation with context."
+vendor: MEOK AI Labs
+homepage: https://meok.ai
+repository: https://github.com/CSOAI-ORG/translator-pro-ai-mcp
+license: MIT
+categories: [Language, NLP]
+tags: [professional-translation, document-translation, language-services, localization, multilingual-support]
+runtime: python
+entrypoint: server.py
