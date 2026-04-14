@@ -1,20 +1,41 @@
 {
   "name": "translator-pro-ai-mcp",
-  "description": "MEOK AI Labs \u2014 translator-pro-ai-mcp \u2014 Professional translation with context.",
-  "vendor": "MEOK AI Labs",
-  "homepage": "https://meok.ai",
-  "repository": "https://github.com/CSOAI-ORG/translator-pro-ai-mcp",
-  "runtime": "python",
-  "entrypoint": "server.py",
+  "description": "translator-pro-ai-mcp \u2014 Professional translation with context.",
+  "version": "1.0.0",
   "tools": [
-    "run"
-  ],
-  "categories": [
-    "Language",
-    "NLP"
-  ],
-  "pricing": {
-    "free": "50 calls/day",
-    "pro": "$9/mo"
-  }
+    {
+      "name": "translate_text",
+      "description": "",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "text": {
+            "type": "string"
+          },
+          "target_language": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "text",
+          "target_language"
+        ]
+      }
+    },
+    {
+      "name": "detect_language",
+      "description": "",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "text": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "text"
+        ]
+      }
+    }
+  ]
 }
