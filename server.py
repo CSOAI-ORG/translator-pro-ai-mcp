@@ -64,11 +64,11 @@ _LANGUAGES = {
 }
 
 
-mcp = FastMCP("translator-pro-ai-mcp", instructions="Translation and language tools by MEOK AI Labs.")
+mcp = FastMCP("translator-pro-ai", instructions="Translation and language tools by MEOK AI Labs.")
 
 
-@mcp.tool(name="translate_text")
-async def translate_text(text: str, target_language: str, source_language: str = "en", api_key: str = "") -> dict:
+@mcp.tool()
+def translate_text(text: str, target_language: str, source_language: str = "en", api_key: str = "") -> dict:
     """Translate text using built-in phrase dictionary. Word-by-word with phrase matching."""
     allowed, msg, tier = check_access(api_key)
     if not allowed:
@@ -125,8 +125,8 @@ async def translate_text(text: str, target_language: str, source_language: str =
     }
 
 
-@mcp.tool(name="detect_language")
-async def detect_language(text: str, api_key: str = "") -> dict:
+@mcp.tool()
+def detect_language(text: str, api_key: str = "") -> dict:
     """Detect the language of input text using word frequency and character patterns."""
     allowed, msg, tier = check_access(api_key)
     if not allowed:
@@ -171,8 +171,8 @@ async def detect_language(text: str, api_key: str = "") -> dict:
     }
 
 
-@mcp.tool(name="compare_translations")
-async def compare_translations(text: str, languages: list, source_language: str = "en", api_key: str = "") -> dict:
+@mcp.tool()
+def compare_translations(text: str, languages: list, source_language: str = "en", api_key: str = "") -> dict:
     """Compare translations of the same text across multiple target languages."""
     allowed, msg, tier = check_access(api_key)
     if not allowed:
@@ -225,8 +225,8 @@ async def compare_translations(text: str, languages: list, source_language: str 
     }
 
 
-@mcp.tool(name="get_supported_languages")
-async def get_supported_languages(api_key: str = "") -> dict:
+@mcp.tool()
+def get_supported_languages(api_key: str = "") -> dict:
     """List all supported languages with their codes and capabilities."""
     allowed, msg, tier = check_access(api_key)
     if not allowed:
