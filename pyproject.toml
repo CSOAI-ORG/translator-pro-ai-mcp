@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 [project]
 name = "translator-pro-ai-mcp"
 version = "1.0.0"
-description = "MEOK AI Labs — translator-pro-ai-mcp"
+description = "AI-powered translator pro ai MCP server for agents. Supports translate text, detect language, compare translations. By MEOK AI Labs."
 license = {file = "LICENSE"}
 requires-python = ">=3.10"
 authors = [{name = "MEOK AI Labs", email = "nicholas@meok.ai"}]

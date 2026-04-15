@@ -1,1 +1,11 @@
-{"name":"translator-pro-ai-mcp","version":"1.0.0","description":"MEOK AI Labs MCP","author":"MEOK AI Labs","license":"MIT","repository":{"type":"git","url":"https://github.com/CSOAI-ORG/translator-pro-ai-mcp"}}
+{
+  "name": "translator-pro-ai-mcp",
+  "version": "1.0.0",
+  "description": "AI-powered translator pro ai MCP server for agents. Supports translate text, detect language, compare translations. By MEOK AI Labs.",
+  "author": "MEOK AI Labs",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CSOAI-ORG/translator-pro-ai-mcp"
+  }
+}

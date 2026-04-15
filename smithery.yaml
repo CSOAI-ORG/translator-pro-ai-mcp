@@ -1,5 +1,6 @@
 name: translator-pro-ai-mcp
-description: Translation and language tools by MEOK AI Labs.
+description: AI-powered translator pro ai MCP server for agents. Supports translate
+  text, detect language, compare translations. By MEOK AI Labs.
 version: 1.0.0
 tools:
 - name: translate_text
