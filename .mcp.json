@@ -1,11 +1,11 @@
 {
   "name": "translator-pro-ai-mcp",
-  "description": "translator-pro-ai-mcp \u2014 Professional translation with context.",
+  "description": "> **By [MEOK AI Labs](https://meok.ai)** \u2014 Translation and language tools by MEOK AI Labs.",
   "version": "1.0.0",
   "tools": [
     {
       "name": "translate_text",
-      "description": "",
+      "description": "Translate text using built-in phrase dictionary. Word-by-word with phrase matching.",
       "parameters": {
         "type": "object",
         "properties": {
@@ -13,6 +13,9 @@
             "type": "string"
           },
           "target_language": {
+            "type": "string"
+          },
+          "source_language": {
             "type": "string"
           }
         },
@@ -24,7 +27,7 @@
     },
     {
       "name": "detect_language",
-      "description": "",
+      "description": "Detect the language of input text using word frequency and character patterns.",
       "parameters": {
         "type": "object",
         "properties": {
@@ -35,6 +38,37 @@
         "required": [
           "text"
         ]
+      }
+    },
+    {
+      "name": "compare_translations",
+      "description": "Compare translations of the same text across multiple target languages.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "text": {
+            "type": "string"
+          },
+          "languages": {
+            "type": "array"
+          },
+          "source_language": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "text",
+          "languages"
+        ]
+      }
+    },
+    {
+      "name": "get_supported_languages",
+      "description": "List all supported languages with their codes and capabilities.",
+      "parameters": {
+        "type": "object",
+        "properties": {},
+        "required": []
       }
     }
   ]

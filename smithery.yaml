@@ -1,9 +1,10 @@
 name: translator-pro-ai-mcp
-description: "translator-pro-ai-mcp \u2014 Professional translation with context."
+description: Translation and language tools by MEOK AI Labs.
 version: 1.0.0
 tools:
 - name: translate_text
-  description: ''
+  description: Translate text using built-in phrase dictionary. Word-by-word with
+    phrase matching.
   parameters:
   - name: text
     type: string
@@ -11,9 +12,28 @@ tools:
   - name: target_language
     type: string
     required: true
+  - name: source_language
+    type: string
+    required: false
 - name: detect_language
-  description: ''
+  description: Detect the language of input text using word frequency and character
+    patterns.
   parameters:
   - name: text
     type: string
     required: true
+- name: compare_translations
+  description: Compare translations of the same text across multiple target languages.
+  parameters:
+  - name: text
+    type: string
+    required: true
+  - name: languages
+    type: array
+    required: true
+  - name: source_language
+    type: string
+    required: false
+- name: get_supported_languages
+  description: List all supported languages with their codes and capabilities.
+  parameters: []
