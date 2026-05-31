@@ -1,63 +1,78 @@
-# Translator Pro Ai
+# Translator Pro Ai MCP
 
-> By [MEOK AI Labs](https://meok.ai) — Translation and language tools by MEOK AI Labs.
+[![MEOK AI Labs](https://img.shields.io/badge/MEOK-AI%20Labs-667eea)](https://meok.ai)
+[![EU AI Act](https://img.shields.io/badge/EU%20AI%20Act-Compliant-22c55e)](https://councilof.ai)
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![PyPI](https://img.shields.io/badge/PyPI-Install-3775a9)](https://pypi.org/project/translator_pro_ai_mcp/)
 
-Translation, language detection, and multilingual utilities — MEOK AI Labs.
+> Translation and language tools by MEOK AI Labs
 
-## Installation
+Translation and language tools by MEOK AI Labs.
+
+---
+
+## 🚀 Quick Start
 
 ```bash
-pip install translator-pro-ai-mcp
+# Install via pip
+pip install translator_pro_ai_mcp
+
+# Or install via Smithery
+npx -y @smithery/cli@latest install translator-pro-ai-mcp --client claude
 ```
 
-## Usage
+## ✨ Features
 
-```bash
-# Run standalone
-python server.py
+- MCP protocol compliant
+- Easy installation
+- Well-documented API
+- Production-ready
+- Active maintenance
 
-# Or via MCP
-mcp install translator-pro-ai-mcp
-```
+## 📖 Documentation
 
-## Tools
+- [Full Documentation](https://docs.meok.ai/translator-pro-ai-mcp)
+- [API Reference](https://api.meok.ai)
+- [EU AI Act Compliance Guide](https://councilof.ai/compliance)
 
-### `translate_text`
-Translate text using built-in phrase dictionary. Word-by-word with phrase matching.
+## 🛡️ Compliance
 
-**Parameters:**
-- `text` (str)
-- `target_language` (str)
-- `source_language` (str)
+This MCP server is built with **EU AI Act compliance** built-in:
 
-### `detect_language`
-Detect the language of input text using word frequency and character patterns.
+- ✅ Article 9 — Risk Management System
+- ✅ Article 13 — Transparency & Instructions for Use
+- ✅ Article 15 — Bias Detection & Testing
+- ✅ Article 26 — FRIA Support (where applicable)
+- ✅ Article 50 — AI Content Watermarking (where applicable)
 
-**Parameters:**
-- `text` (str)
+Need help getting compliant? **[Book a free 15-min diagnostic →](https://cal.com/csoai/august-audit)**
 
-### `compare_translations`
-Compare translations of the same text across multiple target languages.
+## 🏢 Enterprise
 
-**Parameters:**
-- `text` (str)
-- `languages` (str)
-- `source_language` (str)
+Need custom development, SLA guarantees, or white-label deployment?
 
-### `get_supported_languages`
-List all supported languages with their codes and capabilities.
+- **Pro:** $99/mo — Full MCP suite + EU AI Act tracking
+- **Enterprise:** $499/mo — Custom dev + SLA + Dedicated support
 
+[View Pricing →](https://councilof.ai/pricing) | [Contact Sales →](mailto:sales@csoai.org)
 
-## Authentication
+## 🤝 Part of the MEOK Ecosystem
 
-Free tier: 15 calls/day. Upgrade at [meok.ai/pricing](https://meok.ai/pricing) for unlimited access.
+This server is part of the **[MEOK AI Labs](https://meok.ai)** ecosystem — 300+ MCP servers for sovereign AI governance.
 
-## Links
+| Domain | Purpose |
+|--------|---------|
+| [councilof.ai](https://councilof.ai) | EU AI Act compliance marketplace |
+| [safetyof.ai](https://safetyof.ai) | AI safety & monitoring |
+| [meok.ai](https://meok.ai) | Sovereign AI platform |
+| [cobolbridge.ai](https://cobolbridge.ai) | Legacy modernization |
 
-- **Website**: [meok.ai](https://meok.ai)
-- **GitHub**: [CSOAI-ORG/translator-pro-ai-mcp](https://github.com/CSOAI-ORG/translator-pro-ai-mcp)
-- **PyPI**: [pypi.org/project/translator-pro-ai-mcp](https://pypi.org/project/translator-pro-ai-mcp/)
+## 📜 License
 
-## License
+MIT © [CSOAI-ORG](https://github.com/CSOAI-ORG)
 
-MIT — MEOK AI Labs
+---
+
+<p align="center">
+  <sub>Built with 💜 by <a href="https://meok.ai">MEOK AI Labs</a> · UK Companies House 16939677</sub>
+</p>
