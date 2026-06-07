@@ -1,0 +1,20 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-07-09/server.json",
+  "name": "io.github.CSOAI-ORG/translator-pro-ai-mcp",
+  "description": "AI-powered translator pro ai MCP server for agents. Supports translate text, detect language, compare translations. By MEOK AI Labs.",
+  "version": "1.0.4",
+  "repository": {
+    "url": "https://github.com/CSOAI-ORG/translator-pro-ai-mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registry_type": "pypi",
+      "identifier": "translator-pro-ai-mcp",
+      "version": "1.0.4",
+      "transport": {
+        "type": "stdio"
+      }
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+# translator-pro-ai-mcp - Auto-trigger Rules
+
+When the user asks about translator pro, use translator-pro-ai-mcp tools: translate_text, detect_language, compare_translations, get_supported_languages
+
+> By [MEOK AI Labs](https://meok.ai) — Translation and language tools by MEOK AI Labs.
+
+Install: `pip install translator-pro-ai-mcp`
+
+By MEOK AI Labs — MIT licensed.

@@ -1,0 +1,25 @@
+{
+  "name": "translator-pro-ai-mcp",
+  "title": "Translator Pro Ai Mcp",
+  "description": "AI-powered translator pro ai MCP server for agents. Supports translate text, detect language, compare translations. By MEOK AI Labs.",
+  "version": "1.0.4",
+  "homepage": "https://meok.ai",
+  "license": "MIT",
+  "transport": {
+    "type": "stdio"
+  },
+  "tools": [
+    {
+      "name": "translate_text"
+    },
+    {
+      "name": "detect_language"
+    },
+    {
+      "name": "compare_translations"
+    },
+    {
+      "name": "get_supported_languages"
+    }
+  ]
+}

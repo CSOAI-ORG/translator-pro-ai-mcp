@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
-"""Translation, language detection, and multilingual utilities — MEOK AI Labs."""
+"""
+Translation, language detection, and multilingual utilities — MEOK AI Labs."""
 import sys, os
-sys.path.insert(0, os.path.expanduser('~/clawd/meok-labs-engine/shared'))
 from auth_middleware import check_access
 
 import json
@@ -72,7 +72,7 @@ def translate_text(text: str, target_language: str, source_language: str = "en",
     """Translate text using built-in phrase dictionary. Word-by-word with phrase matching."""
     allowed, msg, tier = check_access(api_key)
     if not allowed:
-        return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
+        return {"error": msg, "upgrade_url": "https://councilof.ai"}
     if err := _rl(api_key or "anon"):
         return err
 
@@ -130,7 +130,7 @@ def detect_language(text: str, api_key: str = "") -> dict:
     """Detect the language of input text using word frequency and character patterns."""
     allowed, msg, tier = check_access(api_key)
     if not allowed:
-        return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
+        return {"error": msg, "upgrade_url": "https://councilof.ai"}
     if err := _rl(api_key or "anon"):
         return err
 
@@ -176,7 +176,7 @@ def compare_translations(text: str, languages: list, source_language: str = "en"
     """Compare translations of the same text across multiple target languages."""
     allowed, msg, tier = check_access(api_key)
     if not allowed:
-        return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
+        return {"error": msg, "upgrade_url": "https://councilof.ai"}
     if err := _rl(api_key or "anon"):
         return err
 
@@ -230,7 +230,7 @@ def get_supported_languages(api_key: str = "") -> dict:
     """List all supported languages with their codes and capabilities."""
     allowed, msg, tier = check_access(api_key)
     if not allowed:
-        return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
+        return {"error": msg, "upgrade_url": "https://councilof.ai"}
     if err := _rl(api_key or "anon"):
         return err
 
@@ -259,5 +259,8 @@ def get_supported_languages(api_key: str = "") -> dict:
     }
 
 
-if __name__ == "__main__":
+def main():
     mcp.run()
+
+if __name__ == '__main__':
+    main()
