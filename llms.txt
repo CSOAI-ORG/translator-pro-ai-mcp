@@ -1,0 +1,31 @@
+# Translator Pro Ai MCP
+
+> Translation and language tools by MEOK AI Labs
+
+`translator-pro-ai-mcp` is a Model Context Protocol (MCP) server by MEOK AI Labs.
+
+## Install
+
+```bash
+pip install translator-pro-ai-mcp
+```
+
+Or run without installing:
+
+```bash
+uvx translator-pro-ai-mcp
+```
+
+## Tools
+
+- `translate_text` — Translate text using built-in phrase dictionary. Word-by-word with phrase matching.
+- `detect_language` — Detect the language of input text using word frequency and character patterns.
+- `compare_translations` — Compare translations of the same text across multiple target languages.
+- `get_supported_languages` — List all supported languages with their codes and capabilities.
+
+## Links
+
+- Source: https://github.com/CSOAI-ORG/translator-pro-ai-mcp
+- PyPI: https://pypi.org/project/translator-pro-ai-mcp/
+- MEOK AI Labs: https://meok.ai
+- Council of AI: https://councilof.ai
