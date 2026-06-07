@@ -1,0 +1,22 @@
+{
+  "acpVersion": "0.1",
+  "agent": {
+    "name": "translator-pro-ai-mcp",
+    "description": "AI-powered translator pro ai MCP server for agents. Supports translate text, detect language",
+    "version": "1.0.4",
+    "provider": "MEOK AI Labs",
+    "interfaces": [
+      {
+        "type": "mcp",
+        "transport": "stdio",
+        "package": "translator-pro-ai-mcp"
+      }
+    ],
+    "capabilities": [
+      "translate_text",
+      "detect_language",
+      "compare_translations",
+      "get_supported_languages"
+    ]
+  }
+}

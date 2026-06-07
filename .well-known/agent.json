@@ -1,0 +1,59 @@
+{
+  "name": "translator-pro-ai-mcp",
+  "description": "AI-powered translator pro ai MCP server for agents. Supports translate text, detect language",
+  "url": "https://proofof.ai/scorecard/translator-pro-ai-mcp.html",
+  "version": "1.0.4",
+  "protocolVersion": "0.2.0",
+  "provider": {
+    "organization": "MEOK AI Labs",
+    "url": "https://meok.ai"
+  },
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false
+  },
+  "defaultInputModes": [
+    "text"
+  ],
+  "defaultOutputModes": [
+    "text"
+  ],
+  "skills": [
+    {
+      "id": "translate_text",
+      "name": "Translate Text",
+      "description": "translate_text via translator-pro-ai-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "detect_language",
+      "name": "Detect Language",
+      "description": "detect_language via translator-pro-ai-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "compare_translations",
+      "name": "Compare Translations",
+      "description": "compare_translations via translator-pro-ai-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "get_supported_languages",
+      "name": "Get Supported Languages",
+      "description": "get_supported_languages via translator-pro-ai-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    }
+  ]
+}
