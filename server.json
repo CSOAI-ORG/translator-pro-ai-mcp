@@ -2,7 +2,7 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.CSOAI-ORG/translator-pro-ai-mcp",
   "description": "AI-powered translator pro ai MCP server for agents. Supports translate text, detect language",
-  "version": "1.0.4",
+  "version": "1.0.9",
   "repository": {
     "url": "https://github.com/CSOAI-ORG/translator-pro-ai-mcp",
     "source": "github"
@@ -10,7 +10,7 @@
   "packages": [
     {
       "identifier": "translator-pro-ai-mcp",
-      "version": "1.0.4",
+      "version": "1.0.9",
       "transport": {
         "type": "stdio"
       },
