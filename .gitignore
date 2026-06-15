@@ -2,3 +2,9 @@ __pycache__/
 *.pyc
 .env
 *.db
+
+# Auto-added during alignment sweep
+dist/translator_pro_ai_mcp-1.0.6-py3-none-any.whl
+dist/translator_pro_ai_mcp-1.0.6.tar.gz
+dist/translator_pro_ai_mcp-1.0.9-py3-none-any.whl
+dist/translator_pro_ai_mcp-1.0.9.tar.gz
